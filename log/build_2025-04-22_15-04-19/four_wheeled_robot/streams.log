@@ -1,0 +1,60 @@
+[0.028s] Invoking command in '/home/aryan/ros2_ws/build/four_wheeled_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aryan/ros2_ws/install/my_robot_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aryan/ros2_ws/src/ed -DCMAKE_INSTALL_PREFIX=/home/aryan/ros2_ws/install/four_wheeled_robot
+[0.165s] -- The C compiler identification is GNU 13.3.0
+[0.267s] -- The CXX compiler identification is GNU 13.3.0
+[0.290s] -- Detecting C compiler ABI info
+[0.421s] -- Detecting C compiler ABI info - done
+[0.435s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.436s] -- Detecting C compile features
+[0.437s] -- Detecting C compile features - done
+[0.450s] -- Detecting CXX compiler ABI info
+[0.591s] -- Detecting CXX compiler ABI info - done
+[0.609s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.610s] -- Detecting CXX compile features
+[0.611s] -- Detecting CXX compile features - done
+[0.624s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.833s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.005s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.205s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.213s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.213s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.215s] -- Added test 'lint_cmake' to check CMake code style
+[1.217s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.221s] -- Added test 'xmllint' to check XML markup files
+[1.224s] -- Configuring done (1.2s)
+[1.228s] -- Generating done (0.0s)
+[1.231s] -- Build files have been written to: /home/aryan/ros2_ws/build/four_wheeled_robot
+[1.238s] Invoked command in '/home/aryan/ros2_ws/build/four_wheeled_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aryan/ros2_ws/install/my_robot_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/aryan/ros2_ws/src/ed -DCMAKE_INSTALL_PREFIX=/home/aryan/ros2_ws/install/four_wheeled_robot
+[1.239s] Invoking command in '/home/aryan/ros2_ws/build/four_wheeled_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aryan/ros2_ws/install/my_robot_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aryan/ros2_ws/build/four_wheeled_robot -- -j8 -l8
+[1.294s] Invoked command in '/home/aryan/ros2_ws/build/four_wheeled_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aryan/ros2_ws/install/my_robot_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/aryan/ros2_ws/build/four_wheeled_robot -- -j8 -l8
+[1.309s] Invoking command in '/home/aryan/ros2_ws/build/four_wheeled_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aryan/ros2_ws/install/my_robot_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aryan/ros2_ws/build/four_wheeled_robot
+[1.320s] -- Install configuration: ""
+[1.320s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/config
+[1.320s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/config/empty.yaml
+[1.321s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes
+[1.321s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/wheel1_Link.STL
+[1.321s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/tire4_Link.STL
+[1.321s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/motor2_Link.STL
+[1.321s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/wheel4_Link.STL
+[1.322s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/tire1_Link.STL
+[1.322s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/tire2_Link.STL
+[1.322s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/chassis_link.STL
+[1.322s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/motor4_Link.STL
+[1.323s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/wheel3_Link.STL
+[1.323s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/motor1_Link.STL
+[1.323s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/tire3_Link.STL
+[1.323s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/wheel2_Link.STL
+[1.323s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/meshes/motor3_Link.STL
+[1.323s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/worlds
+[1.324s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/worlds/empty.world
+[1.324s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/description
+[1.324s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/description/robot_core_hr.xacro
+[1.324s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/description/robot.urdf.xacro
+[1.324s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/description/inertial_macros.xacro
+[1.324s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/description/robot_core_lr.xacro
+[1.324s] -- Installing: /home/aryan/ros2_ws/install/four_wheeled_robot/share/four_wheeled_robot/description/gazebo_control.xacro
+[1.325s] [31mCMake Error at cmake_install.cmake:46 (file):
+[1.325s]   file INSTALL cannot find "/home/aryan/ros2_ws/src/ed/src": No such file or
+[1.325s]   directory.
+[1.325s] 
+[1.325s] [0m
+[1.327s] Invoked command in '/home/aryan/ros2_ws/build/four_wheeled_robot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aryan/ros2_ws/install/my_robot_controller:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/aryan/ros2_ws/build/four_wheeled_robot

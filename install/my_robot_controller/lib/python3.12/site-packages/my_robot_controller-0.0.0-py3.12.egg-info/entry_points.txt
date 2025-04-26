@@ -1,0 +1,5 @@
+[console_scripts]
+draw_circle = my_robot_controller.draw_circle:main
+hello_world = my_robot_controller.hello_world:main
+pose_subsciber = my_robot_controller.pose_subscriber:main
+turtle_controller = my_robot_controller.turtle_controller:main

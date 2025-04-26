@@ -1,0 +1,9 @@
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/uninstall.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/four_wheeled_robot_uninstall.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/test.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/edit_cache.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/rebuild_cache.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/list_install_components.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/install.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/install/local.dir
+/home/aryan/ros2_ws/build/four_wheeled_robot/CMakeFiles/install/strip.dir

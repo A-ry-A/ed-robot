@@ -1,0 +1,25 @@
+[1.219s] Invoking command in '/home/aryan/ros2_ws/src/my_robot_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aryan/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aryan/ros2_ws/install/my_robot_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/aryan/ros2_ws/build/my_robot_controller/build install --record /home/aryan/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[1.610s] running egg_info
+[1.637s] writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[1.637s] writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[1.637s] writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[1.637s] writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[1.638s] writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[1.695s] reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.696s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[1.696s] running build
+[1.696s] running build_py
+[1.697s] copying my_robot_controller/draw_circle.py -> /home/aryan/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller
+[1.697s] running install
+[1.706s] running install_lib
+[1.736s] copying /home/aryan/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/draw_circle.py -> /home/aryan/ros2_ws/install/my_robot_controller/lib/python3.12/site-packages/my_robot_controller
+[1.736s] byte-compiling /home/aryan/ros2_ws/install/my_robot_controller/lib/python3.12/site-packages/my_robot_controller/draw_circle.py to draw_circle.cpython-312.pyc
+[1.737s] running install_data
+[1.737s] copying package.xml -> /home/aryan/ros2_ws/install/my_robot_controller/share/my_robot_controller
+[1.737s] running install_egg_info
+[1.769s] removing '/home/aryan/ros2_ws/install/my_robot_controller/lib/python3.12/site-packages/my_robot_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[1.769s] Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/aryan/ros2_ws/install/my_robot_controller/lib/python3.12/site-packages/my_robot_controller-0.0.0-py3.12.egg-info
+[1.770s] running install_scripts
+[1.967s] Installing hello_world script to /home/aryan/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[1.967s] writing list of installed files to '/home/aryan/ros2_ws/build/my_robot_controller/install.log'
+[2.011s] Invoked command in '/home/aryan/ros2_ws/src/my_robot_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/aryan/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aryan/ros2_ws/install/my_robot_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/aryan/ros2_ws/build/my_robot_controller/build install --record /home/aryan/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data

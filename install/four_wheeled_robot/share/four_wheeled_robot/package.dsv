@@ -1,0 +1,5 @@
+source;share/four_wheeled_robot/local_setup.bash
+source;share/four_wheeled_robot/local_setup.dsv
+source;share/four_wheeled_robot/local_setup.ps1
+source;share/four_wheeled_robot/local_setup.sh
+source;share/four_wheeled_robot/local_setup.zsh
