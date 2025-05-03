@@ -138,6 +138,39 @@
             <frame name="lidar_frame" attached_to='chassis'>
                 <pose>0 0 0 0 0 0</pose>
             </frame>
+            <frame name="tof_frame" attached_to='chassis'>
+                <pose>0 0 0 0 0 0</pose>
+            </frame>
+
+            <!-- ToF Sensor -->
+            <sensor name="tof_sensor" type="ray">
+                <pose>0 0.5 0.9 0 0 0</pose> <!-- Adjust position and orientation -->
+                <topic>tof</topic>
+                <update_rate>30</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>1</samples>
+                            <resolution>1</resolution>
+                            <min_angle>0</min_angle>
+                            <max_angle>0</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>1</samples>
+                            <resolution>1</resolution>
+                            <min_angle>0</min_angle>
+                            <max_angle>0</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.01</min>
+                        <max>5.0</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                </ray>
+                <always_on>true</always_on>
+                <visualize>true</visualize>
+            </sensor>
 
             <sensor name='gpu_lidar' type='gpu_lidar'>"
                 <pose relative_to='lidar_frame'>0 1.12 1.29 0 0 -1.571</pose>
@@ -194,7 +227,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/back_left_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
@@ -202,7 +235,7 @@
                 <collision name='collision'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/back_left_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
@@ -226,7 +259,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/back_right_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
@@ -234,7 +267,7 @@
                 <collision name='collision'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/back_right_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
@@ -258,7 +291,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/front_left_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
@@ -266,7 +299,7 @@
                 <collision name='collision'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/front_left_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
@@ -290,7 +323,7 @@
                 <visual name='visual'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/front_right_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
@@ -298,7 +331,7 @@
                 <collision name='collision'>
                     <geometry>
                         <mesh>
-                            <uri>meshes/wheel.dae</uri>
+                            <uri>meshes/front_right_wheel.dae</uri>
                             <scale>0.01 0.01 0.01</scale>
                         </mesh>
                     </geometry>
