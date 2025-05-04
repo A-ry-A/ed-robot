@@ -142,10 +142,31 @@
                 <pose>0 0 0 0 0 0</pose>
             </frame>
 
-            <!-- ToF Sensor -->
-            <sensor name="tof_sensor" type="ray">
-                <pose>0 0.5 0.9 0 0 0</pose> <!-- Adjust position and orientation -->
-                <topic>tof</topic>
+            <!-- Camera -->
+            <sensor name="camera_sensor" type="camera">
+                <pose relative_to="chassis">0.12521 0 1 0 0 0</pose> <!-- Adjust position and orientation -->
+                <topic>camera/image</topic>
+                <update_rate>30</update_rate>
+                <camera>
+                    <horizontal_fov>1.326</horizontal_fov> <!-- Field of view in radians -->
+                    <image>
+                        <width>2028</width> <!-- Image width -->
+                        <height>1520</height> <!-- Image height -->
+                        <format>R8G8B8</format> <!-- Image format -->
+                    </image>
+                    <clip>
+                        <near>0.1</near> <!-- Near clipping distance -->
+                        <far>100</far> <!-- Far clipping distance -->
+                    </clip>
+                </camera>
+                <always_on>true</always_on>
+                <visualize>true</visualize>
+            </sensor>
+
+            <!-- ToF Sensor front -->
+            <sensor name="tof_front" type="gpu_lidar">
+                <pose relative_to='tof_frame'>0 -1.4 0.4 0 0 -1.57079632</pose> 
+                <topic>tof/front</topic>
                 <update_rate>30</update_rate>
                 <ray>
                     <scan>
@@ -164,11 +185,71 @@
                     </scan>
                     <range>
                         <min>0.01</min>
-                        <max>5.0</max>
+                        <max>10.0</max>
                         <resolution>0.01</resolution>
                     </range>
                 </ray>
-                <always_on>true</always_on>
+                <always_on>1</always_on>
+                <visualize>true</visualize>
+            </sensor>
+
+            <!-- ToF Sensor back -->
+            <sensor name="tof_back" type="gpu_lidar">
+                <pose relative_to='tof_frame'>0 1.2 0.4 0 0 1.57079632</pose>
+                <topic>tof/back</topic>
+                <update_rate>30</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>1</samples>
+                            <resolution>1</resolution>
+                            <min_angle>0</min_angle>
+                            <max_angle>0</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>1</samples>
+                            <resolution>1</resolution>
+                            <min_angle>0</min_angle>
+                            <max_angle>0</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.01</min>
+                        <max>10.0</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                </ray>
+                <always_on>1</always_on>
+                <visualize>true</visualize>
+            </sensor>
+
+            <!-- ToF Sensor down -->
+            <sensor name="tof_down" type="gpu_lidar">
+                <pose relative_to='tof_frame'>0 -1.5 0.53 0 1.57079632 -1.57079632</pose> 
+                <topic>tof/down</topic>
+                <update_rate>30</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>1</samples>
+                            <resolution>1</resolution>
+                            <min_angle>0</min_angle>
+                            <max_angle>0</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>1</samples>
+                            <resolution>1</resolution>
+                            <min_angle>0</min_angle>
+                            <max_angle>0</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.01</min>
+                        <max>10.0</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                </ray>
+                <always_on>1</always_on>
                 <visualize>true</visualize>
             </sensor>
 
@@ -414,6 +495,34 @@
                 filename="gz-sim-sensors-system"
                 name="gz::sim::systems::Sensors">
                 <render_engine>ogre2</render_engine>
+            </plugin>
+
+            <plugin
+                filename="libignition-gazebo-joint-velocity-system.so"
+                name="ignition::gazebo::systems::JointVelocity">
+                <joint_name>front_left_wheel_joint</joint_name>
+                <topic>front_left_wheel/velocity</topic>
+            </plugin>
+
+            <plugin
+                filename="libignition-gazebo-joint-velocity-system.so"
+                name="ignition::gazebo::systems::JointVelocity">
+                <joint_name>front_right_wheel_joint</joint_name>
+                <topic>front_right_wheel/velocity</topic>
+            </plugin>
+
+            <plugin
+                filename="libignition-gazebo-joint-velocity-system.so"
+                name="ignition::gazebo::systems::JointVelocity">
+                <joint_name>back_left_wheel_joint</joint_name>
+                <topic>back_left_wheel/velocity</topic>
+            </plugin>
+
+            <plugin
+                filename="libignition-gazebo-joint-velocity-system.so"
+                name="ignition::gazebo::systems::JointVelocity">
+                <joint_name>back_right_wheel_joint</joint_name>
+                <topic>back_right_wheel/velocity</topic>
             </plugin>
 
         </model>
