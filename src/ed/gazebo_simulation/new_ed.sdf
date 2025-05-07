@@ -102,6 +102,51 @@
             </link>
         </model>
 
+        <model name='office_chair'>
+            <pose relative_to='world'>5 2 0 0 0 0</pose>
+            <static>true</static>
+            <link name="link">
+            <visual name='visual'>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OfficeChairGrey.obj</uri>
+                        <scale>4 4 4</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name='collision'>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OfficeChairGrey.obj</uri>
+                        <scale>4 4 4</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            </link>
+        </model>
+        <model name='desk'>
+            <pose relative_to='world'>5 1.5 0 0 0 1.5708</pose>
+            <static>true</static>
+            <link name="link">
+            <visual name='visual'>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/desk.obj</uri>
+                        <scale>4 4 4</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name='collision'>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/desk.obj</uri>
+                        <scale>4 4 4</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            </link>
+        </model>
+
         <model name='Ed_Robot' canonical_link='chassis'>
             <pose relative_to='world'>0 0 0 0 0 0</pose>
 
