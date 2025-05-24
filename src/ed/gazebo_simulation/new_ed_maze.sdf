@@ -102,145 +102,292 @@
             </link>
         </model>
 
-        <model name='office_chair'>
-            <pose relative_to='world'>5 3.5 0 0 0 0</pose>
+        <model name='maze'>
             <static>true</static>
-            <link name="link">
+            <pose relative_to='world'>0 0 0 0 0 0</pose>
+            <link name='wall_1'>
+                <pose relative_to='__model__'>-9.5 0 0 0 0 0</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
             <visual name='visual'>
                 <geometry>
-                    <mesh>
-                        <uri>meshes/OfficeChairGrey.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
+                    <box>
+                        <size>1.0 20 4</size>
+                    </box>
                 </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
             </visual>
             <collision name='collision'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/OfficeChairGrey.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </collision>
+                    <geometry>
+                        <box>
+                            <size>1.0 20 4</size>
+                        </box>
+                    </geometry>
+                </collision>
             </link>
-        </model>
-        <model name='desk'>
-            <pose relative_to='world'>5 3 0 0 0 1.5708</pose>
-            <static>true</static>
-            <link name="link">
-            <visual name='visual'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/desk.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </visual>
-            <collision name='collision'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/desk.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </collision>
-            </link>
-        </model>
 
-        <model name='office_chair_2'>
-            <pose relative_to='world'>1 3.5 0 0 0 0</pose>
-            <static>true</static>
-            <link name="link">
+            <link name='wall_2'>
+                <pose relative_to='__model__'>-5.5 -2.5 0 0 0 0</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
             <visual name='visual'>
                 <geometry>
-                    <mesh>
-                        <uri>meshes/OfficeChairGrey.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
+                    <box>
+                        <size>1.0 15 4</size>
+                    </box>
                 </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
             </visual>
             <collision name='collision'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/OfficeChairGrey.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </collision>
+                    <geometry>
+                        <box>
+                            <size>1.0 15 4</size>
+                        </box>
+                    </geometry>
+                </collision>
             </link>
-        </model>
-        <model name='desk_2'>
-            <pose relative_to='world'>1 3 0 0 0 1.5708</pose>
-            <static>true</static>
-            <link name="link">
-            <visual name='visual'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/desk.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </visual>
-            <collision name='collision'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/desk.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </collision>
-            </link>
-        </model>
 
-        <model name='office_chair_3'>
-            <pose relative_to='world'>-3 3.5 0 0 0 0</pose>
-            <static>true</static>
-            <link name="link">
+            <link name='wall_3'>
+                <pose relative_to='__model__'>0 10 0 0 0 1.5708</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
             <visual name='visual'>
                 <geometry>
-                    <mesh>
-                        <uri>meshes/OfficeChairGrey.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
+                    <box>
+                        <size>1.0 20 4</size>
+                    </box>
                 </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
             </visual>
             <collision name='collision'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/OfficeChairGrey.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </collision>
+                    <geometry>
+                        <box>
+                            <size>1.0 20 4</size>
+                        </box>
+                    </geometry>
+                </collision>
             </link>
-        </model>
-        <model name='desk_3'>
-            <pose relative_to='world'>-3 3 0 0 0 1.5708</pose>
-            <static>true</static>
-            <link name="link">
-            <visual name='visual'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/desk.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </visual>
-            <collision name='collision'>
-                <geometry>
-                    <mesh>
-                        <uri>meshes/desk.obj</uri>
-                        <scale>4 4 4</scale>
-                    </mesh>
-                </geometry>
-            </collision>
-            </link>
-        </model>
 
-        
+            <link name='wall_4'>
+                <pose relative_to='__model__'>-3.5 5.5 0 0 0 1.5708</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
+            <visual name='visual'>
+                <geometry>
+                    <box>
+                        <size>1.0 5 4</size>
+                    </box>
+                </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
+            </visual>
+            <collision name='collision'>
+                    <geometry>
+                        <box>
+                            <size>1.0 5 4</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+
+            <link name='wall_5'>
+                <pose relative_to='__model__'>-0.5 1 0 0 0 0</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
+            <visual name='visual'>
+                <geometry>
+                    <box>
+                        <size>1.0 10 4</size>
+                    </box>
+                </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
+            </visual>
+            <collision name='collision'>
+                    <geometry>
+                        <box>
+                            <size>1.0 10 4</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+
+            <link name='wall_6'>
+                <pose relative_to='__model__'>4.5 -4.5 0 0 0 1.5708</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
+            <visual name='visual'>
+                <geometry>
+                    <box>
+                        <size>1.0 11 4</size>
+                    </box>
+                </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
+            </visual>
+            <collision name='collision'>
+                    <geometry>
+                        <box>
+                            <size>1.0 11 4</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+
+            <link name='wall_7'>
+                <pose relative_to='__model__'>4 5 0 0 0 0</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
+            <visual name='visual'>
+                <geometry>
+                    <box>
+                        <size>1.0 10 4</size>
+                    </box>
+                </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
+            </visual>
+            <collision name='collision'>
+                    <geometry>
+                        <box>
+                            <size>1.0 10 4</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+
+            <link name='wall_8'>
+                <pose relative_to='__model__'>10 0 0 0 0 0</pose>
+            <inertial> <!--inertial properties of the link mass, inertia matrix-->
+                <mass>1.14395</mass>
+                <inertia>
+                    <ixx>0.095329</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.381317</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.476646</izz>
+                </inertia>
+            </inertial>
+            <visual name='visual'>
+                <geometry>
+                    <box>
+                        <size>1.0 10 4</size>
+                    </box>
+                </geometry>
+                <!--let's add color to our link-->
+                <material>
+                    <ambient>0.0 0.0 1.0 1</ambient>
+                    <diffuse>0.0 0.0 1.0 1</diffuse>
+                    <specular>0.0 0.0 1.0 1</specular>
+                </material>
+            </visual>
+            <collision name='collision'>
+                    <geometry>
+                        <box>
+                            <size>1.0 10 4</size>
+                        </box>
+                    </geometry>
+                </collision>
+            </link>
+        </model>
 
         <model name='Ed_Robot' canonical_link='chassis'>
-            <pose relative_to='world'>0 0 0 0 0 0</pose>
+            <pose relative_to='world'>-7.5 -7 0 0 0 3.14159</pose>
 
             <!--chassis-->
             <link name='chassis'>
